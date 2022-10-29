@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            img{
+                border-radius:5px;
+            }
+            .indiv{
+                background-color: #B2B2B2;
+                width: 150px;
+                text-align: center;
+                border-radius: 10px;
+            }
+            p{
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+            button{
+                background-color: #DFD3C3;
+                border-radius: 10px;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="padding: 20px;border:solid;">
+        <table border="0">
+            <tr>
+                <td><img src="data:image/jpeg;base64,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" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+            </tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+            </tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+            </tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+            </tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+            <tr>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td><img src="https://staticimg.titan.co.in/Titan/Catalog/90156AP03_1.jpg?impolicy=pqlow&imwidth=640" alt="smart-titan-watch" width="150px" height="150px">
+                    <div class="indiv"><p>Titan Talk-Touch Screen<br>Price:-9,995/-</p><form><button type="submit"><i class="fa-solid fa-cart-arrow-down"></i><b> Add to cart</b></button></form></div>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
